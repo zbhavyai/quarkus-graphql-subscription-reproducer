@@ -87,6 +87,7 @@ public class GalaxyService {
     }
 
     public void addHero(Hero hero) {
+        System.out.println("Adding hero: " + hero);
         heroes.add(hero);
     }
 

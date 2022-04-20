@@ -69,4 +69,16 @@ public class Hero {
     public void setEpisodeIds(List<Integer> episodeIds) {
         this.episodeIds = episodeIds;
     }
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", height=" + height +
+                ", mass=" + mass +
+                ", darkSide=" + darkSide +
+                ", lightSaber=" + lightSaber +
+                '}';
+    }
 }
