@@ -7,7 +7,7 @@ import org.eclipse.microprofile.graphql.Name;
 import org.eclipse.microprofile.graphql.Description;
 import org.eclipse.microprofile.graphql.DefaultValue;
 import org.eclipse.microprofile.graphql.Source;
-
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.util.List;
 import io.smallrye.mutiny.operators.multi.processors.BroadcastProcessor;
@@ -15,6 +15,7 @@ import io.smallrye.graphql.api.Subscription;
 import io.smallrye.mutiny.Multi;
 
 @GraphQLApi
+@ApplicationScoped
 public class FilmResource {
 
     @Inject
